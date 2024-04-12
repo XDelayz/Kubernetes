@@ -3,10 +3,6 @@ kind: Ingress
 metadata:
   name: my-web-ingress
 spec:
-  tls:
-  - hosts:
-    - dec3mber.pp.ua
-    secretName: my-web-certificate-7x669
   rules:
   - host: dec3mber.pp.ua
     http:
@@ -18,4 +14,3 @@ spec:
             name: my-single-pod-service
             port:
               number: 80
-
